@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Installer\Console\Concerns;
+namespace NiftyCo\Laranew\Console\Concerns;
 
 use Laravel\Prompts\ConfirmPrompt;
 use Laravel\Prompts\MultiSelectPrompt;
@@ -69,8 +69,8 @@ trait ConfiguresPrompts
                 fn () => collect((new SymfonyStyle($input, $output))->choice(
                     $prompt->label,
                     array_is_list($prompt->options)
-                        ? ['None', ...$prompt->options]
-                        : ['none' => 'None', ...$prompt->options],
+                    ? ['None', ...$prompt->options]
+                    : ['none' => 'None', ...$prompt->options],
                     'None',
                     true)
                 )->reject(array_is_list($prompt->options) ? 'None' : 'none')->all(),

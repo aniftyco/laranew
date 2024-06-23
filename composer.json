@@ -1,6 +1,6 @@
 {
-    "name": "laravel/installer",
-    "description": "Laravel application installer.",
+    "name": "aniftyco/laranew",
+    "description": "Laravel template installer.",
     "keywords": ["laravel"],
     "license": "MIT",
     "authors": [
@@ -22,16 +22,16 @@
         "phpunit/phpunit": "^10.4"
     },
     "bin": [
-        "bin/laravel"
+        "bin/laranew"
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\": "src/"
+            "NiftyCo\\Laranew\\Console\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\Tests\\": "tests/"
+            "NiftyCo\\Laranew\\Console\\Tests\\": "tests/"
         }
     },
     "config": {

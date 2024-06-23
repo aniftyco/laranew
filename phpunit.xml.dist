@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
     <testsuites>
-        <testsuite name="Laravel Installer Test Suite">
+        <testsuite name="Laranew Installer Test Suite">
             <directory suffix="Test.php">./tests</directory>
             <exclude>./tests/scaffolds</exclude>
         </testsuite>
