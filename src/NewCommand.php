@@ -478,10 +478,16 @@ class NewCommand extends Command
     {
         $branch = $input->getOption('branch') ?: $this->defaultBranch();
 
+        $message = text(
+            label: 'What is the commit message for the initial commit?',
+            placeholder: 'Initial commit',
+            default: 'Set up a fresh Laravel app',
+        );
+
         $commands = [
             'git init -q',
             'git add .',
-            'git commit -q -m "Set up a fresh Laravel app"',
+            "git commit -q -m \"{$message}\"",
             "git branch -M {$branch}",
         ];
 
